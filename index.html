@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia FLOPPY | Trading en vivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">FLOPPY</a>
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#about">¿Quiénes somos?</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Animated Background -->
+    <section class="hero" id="home">
+        <canvas id="tradingCanvas" class="trading-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="live-badge">
+                        <i class="fas fa-circle"></i> LIVE
+                    </div>
+                    <h1 class="hero-title">OPERACIONES <span class="highlight">en vivo</span></h1>
+                    <p class="hero-subtitle">De lunes a viernes, únete a más de 900 sesiones operando 100% en vivo</p>
+                    <a href="#pricing" class="btn btn-secondary">Quiero acceder ahora</a>
+                </div>
+                <div class="hero-form">
+                    <h3 class="form-title">¡Regístrate para obtener acceso GRATIS!</h3>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Tu Correo Electrónico *</label>
+                            <input type="email" id="email" class="form-control" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">Teléfono WhatsApp</label>
+                            <input type="tel" id="whatsapp" class="form-control" placeholder="Tu número de WhatsApp">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">¡Unirme ahora!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" id="featuresTitle">Más de 900 sesiones operando 100% en vivo</h2>
+            <div class="features-grid">
+                <div class="feature-card" id="feature1">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="feature-title">Sesión privada 1 vez por semana</h3>
+                    <p class="feature-text">Una oportunidad para resolver dudas, aclarar estrategias y formular preguntas de manera personalizada.</p>
+                </div>
+                <div class="feature-card" id="feature2">
+                    <div class="feature-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <h3 class="feature-title">Operativa en vivo por YouTube</h3>
+                    <p class="feature-text">Participa en sesiones donde observarás cómo traders rentables toman decisiones en tiempo real y aplican estrategias efectivas.</p>
+                </div>
+                <div class="feature-card" id="feature3">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Contexto de traders rentables</h3>
+                    <p class="feature-text">Sumérgete en un entorno donde aprenderás no solo técnicas, sino también la mentalidad y disciplina de traders exitosos para construir una operativa consistente.</p>
+                </div>
+                <div class="feature-card" id="feature4">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Simulador de back testing</h3>
+                    <p class="feature-text">Herramienta avanzada para practicar y probar tus estrategias en riesgo, verificando áreas de mejora antes de aplicarlas en mercado real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" id="aboutImage">
+                    <img class="Floppy-img" src="img/AD_3_-_C_32-2141438.webp" alt="Emanuel Floppy">
+                </div>
+                <div class="about-text" id="aboutText">
+                    <h2 class="about-title">¿Quién soy?</h2>
+                    <p class="about-description">Soy Emanuel y llevo más de 5 años operando con la misma estrategia, soy el creador y fundador de la estrategia Floppy, con la que cientos de estudiantes han podido obtener ganancias.</p>
+                    <p class="about-description">Con una historia de dedicación y años de experiencia en los mercados financieros, he desarrollado un sistema que me ha permitido ser un trader rentable con una década de resultados consistentes.</p>
+                    <a href="#pricing" class="btn btn-primary">Quiero acceder a las operativas en vivo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title" id="coursesTitle">¿QUÉ ES PREMIUM ACADEMY?</h2>
+            <p style="text-align: center; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">Es una UNIVERSIDAD ONLINE que busca formar personas de alto valor y ofrecer habilidades que les permitan generar ingresos, una de ellas es el Trading ya que contamos con 6 expertos con estrategias diferentes que podrás estudiar.</p>
+            
+            <div class="courses-grid">
+                <div class="course-card" id="course1">
+                    <div class="course-image">
+                        <img src="img/fc6657cd2a2f017bff8d8855e00cc701.jpg" alt="Curso de Trading">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-tag">Trading</span>
+                        <h3 class="course-title">Curso de Trading (6 metodologías)</h3>
+                        <p class="course-description">Domina el trading desde cero con 6 metodologías diferentes para adaptarse a tu estilo y personalidad.</p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <i class="fas fa-clock"></i> 40+ horas
+                            </div>
+                            <div class="course-meta">
+                                <i class="fas fa-user-graduate"></i> Todos los niveles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" id="course2">
+                    <div class="course-image">
+                        <img src="img/706feaf29a1853424352fdc376291c59.jpg" alt="Curso de Crecimiento Personal">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-tag">Desarrollo</span>
+                        <h3 class="course-title">Curso de Crecimiento Personal</h3>
+                        <p class="course-description">Desarrolla las habilidades mentales necesarias para alcanzar tus metas en el trading y en la vida.</p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <i class="fas fa-clock"></i> 20+ horas
+                            </div>
+                            <div class="course-meta">
+                                <i class="fas fa-user-graduate"></i> Todos los niveles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" id="course3">
+                    <div class="course-image">
+                        <img src="img/8aeac9af421d6ca6802e38ac34360800.jpg" alt="Curso de Finanzas">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-tag">Finanzas</span>
+                        <h3 class="course-title">Curso de Finanzas</h3>
+                        <p class="course-description">Aprende a gestionar tu capital, crear múltiples fuentes de ingresos y construir riqueza a largo plazo.</p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <i class="fas fa-clock"></i> 15+ horas
+                            </div>
+                            <div class="course-meta">
+                                <i class="fas fa-user-graduate"></i> Todos los niveles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-card" id="course4">
+                    <div class="course-image">
+                        <img src="img/5e5f09accb365511756b6dc4aa23ab74.jpg" alt="Curso de Mindset">
+                    </div>
+                    <div class="course-content">
+                        <span class="course-tag">Psicología</span>
+                        <h3 class="course-title">Curso de Mindset</h3>
+                        <p class="course-description">Desarrolla la mentalidad ganadora necesaria para superar los desafíos del trading y lograr consistencia.</p>
+                        <div class="course-footer">
+                            <div class="course-meta">
+                                <i class="fas fa-clock"></i> 12+ horas
+                            </div>
+                            <div class="course-meta">
+                                <i class="fas fa-user-graduate"></i> Todos los niveles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://vsl.floppyuniversity.com/" class="btn btn-secondary">Ver todos los cursos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title" id="pricingTitle">¿QUÉ INCLUYE ESTA OFERTA GANADORA?</h2>
+            <div class="pricing-content">
+                <div class="pricing-card" id="pricingCard">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">PREMIUM ACCESS</h3>
+                        <p class="pricing-original">$1950 USD</p>
+                        <span class="pricing-discount">70% DE DESCUENTO</span>
+                        <div class="pricing-price">$399 <span>USD</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Floppy Trading 1.0 y 2.0: La guía completa para dominar el Trading</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Metodología probada y actualizada al 2024</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sesión privada 1 vez por semana</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Operativas en vivo por YouTube (lunes a viernes)</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Contexto de traders rentables</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Simulador de back testing</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Acceso a 12 cursos especializados</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comunidad privada de traders</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-block">¡Quiero agendar una llamada con Floppy!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" id="testimonialsTitle">MÁS TESTIMONIOS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" id="testimonial1">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="client/8a6e3ed8d195f874663dc6769b87a03b.jpg" alt="Cliente">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Mendoza</h4>
+                            <p>Trader desde hace 1 año</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Nunca pensé que podría dejar mi trabajo, pero gracias a la estrategia Floppy he podido generar ingresos consistentes por más de 8 meses. La comunidad y el apoyo son invaluables."</p>
+                </div>
+                
+                <div class="testimonial-card" id="testimonial2">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="client/b4f2a3e6e84314b8dd922cd7c3df0b07.jpg" alt="Cliente">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>María González</h4>
+                            <p>Trader desde hace 6 meses</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Las operativas en vivo han sido clave para entender realmente cómo se aplica la estrategia. Ver a Emanuel operar en tiempo real me ha permitido ganar confianza y mejorar mis resultados."</p>
+                </div>
+                
+                <div class="testimonial-card" id="testimonial3">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="client/31ebb4cce6b887a1cd5f1caf253e0af0.jpg" alt="Cliente">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Juan Pérez</h4>
+                            <p>Trader desde hace 2 años</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"He probado muchos cursos y metodologías, pero la estrategia Floppy es la única que me ha dado resultados consistentes. El enfoque en el mindset ha sido transformador para mi trading."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="cta" id="results">
+        <div class="container">
+            <h2 class="cta-title" id="ctaTitle">Te entrego la estrategia con la que he generado más de $200.000 USD</h2>
+            <p class="cta-text" id="ctaText">¡Conviértete en un trader rentable y ródéate de un contexto ganador y consistente desde hace años!</p>
+            <div class="cta-buttons" id="ctaButtons">
+                <a href="#" class="btn btn-secondary">Mira este video de 4 minutos</a>
+                <a href="#pricing" class="btn btn-primary">¡Quiero unirme ahora!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" id="faqTitle">PREGUNTAS FRECUENTES</h2>
+            <div class="faq-container">
+                <div class="faq-item" id="faq1">
+                    <div class="faq-question">
+                        <span>¿Qué nivel de experiencia necesito para unirme?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No necesitas experiencia previa. Nuestros cursos están diseñados para que puedas empezar desde cero y avanzar progresivamente. Contamos con material para todos los niveles, desde principiantes absolutos hasta traders avanzados buscando mejorar su consistencia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq2">
+                    <div class="faq-question">
+                        <span>¿Qué diferencia tiene esta universidad de otros cursos o programas de trading?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos diferenciamos por ofrecer operativas en vivo diarias donde puedes ver la aplicación real de las estrategias, sesiones privadas semanales para resolver dudas, una comunidad activa de traders rentables y un enfoque integral que incluye no solo técnicas de trading sino también desarrollo personal y mentalidad ganadora.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq3">
+                    <div class="faq-question">
+                        <span>¿Cuánto tiempo necesito dedicar para ver resultados?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los resultados varían según la dedicación y el compromiso de cada estudiante. Para obtener los mejores resultados, recomendamos dedicar al menos 1-2 horas diarias a estudiar el material y practicar con el simulador. La mayoría de nuestros estudiantes comprometidos comienzan a ver mejoras significativas en sus operaciones entre 2-3 meses.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq4">
+                    <div class="faq-question">
+                        <span>¿Funciona realmente la estrategia Floppy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La estrategia Floppy ha sido probada y optimizada durante más de 5 años, generando resultados consistentes tanto para Emanuel como para cientos de estudiantes. Sin embargo, es importante entender que el trading conlleva riesgos y requiere disciplina, paciencia y consistencia en la aplicación de la estrategia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" id="faq5">
+                    <div class="faq-question">
+                        <span>¿Qué soporte recibiré después de inscribirme?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tendrás acceso ilimitado a las operativas en vivo de lunes a viernes, sesiones privadas semanales con Emanuel, acceso a la comunidad privada donde podrás interactuar con otros traders exitosos, y soporte técnico para cualquier problema con la plataforma o materiales de estudio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">FLOPPY</a>
+                    <p class="footer-text">Transformando vidas a través del trading rentable y estrategias comprobadas desde hace más de 5 años.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Enlaces rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#about">Sobre nosotros</a></li>
+                        <li><a href="#courses">Cursos</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Cursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Trading Metodologías</a></li>
+                        <li><a href="#">Crecimiento Personal</a></li>
+                        <li><a href="#">Finanzas</a></li>
+                        <li><a href="#">Mindset</a></li>
+                        <li><a href="#">Yoga y Meditación</a></li>
+                        <li><a href="#">Dropshipping</a></li>
+                        <li><a href="#">E-commerce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>soporte@floppytrading.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+1 (123) 456-7890</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Premium Academy Online</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>TODOS LOS DERECHOS RESERVADOS | FLOPPY © 2025</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
